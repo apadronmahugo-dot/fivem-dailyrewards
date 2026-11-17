@@ -9,7 +9,12 @@ Compatible con **ESX · QBCore · QBox · Standalone**. Sin SQL. 100% gratis.
 
 🎬 [Ver tráiler en MP4](docs/trailer.mp4)
 
-### ▶ Hecho por **[Nexo Scripts](https://nexoscripts.net/en)** · ¡descubre más scripts en nuestra web!
+### Hecho por **[Nexo Scripts](https://nexoscripts.net/en)**
+
+[![YouTube](https://img.shields.io/badge/YouTube-@nexostorenet-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@nexostorenet)
+[![Web](https://img.shields.io/badge/Web-nexoscripts.net-F5B942?style=for-the-badge&logo=googlechrome&logoColor=black)](https://nexoscripts.net/en)
+
+**¡Suscríbete al canal para más scripts gratis!**
 
 </div>
 
@@ -110,6 +115,8 @@ Si lo compartes, mantén los créditos 🙏
 
 <div align="center">
 
-### ⭐ Si te sirve, deja una estrella y visita **[Nexo Scripts](https://nexoscripts.net/en)** ⭐
+### ⭐ Si te sirve, deja una estrella y suscríbete a **[Nexo Scripts en YouTube](https://www.youtube.com/@nexostorenet)** ⭐
+
+🌐 Más scripts en **[nexoscripts.net](https://nexoscripts.net/en)**
 
 </div>

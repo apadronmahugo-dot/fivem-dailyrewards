@@ -27,7 +27,7 @@ Config.AdminResetCommand = 'dr_reset'
 Config.Branding = {
     name          = 'Nexo Scripts',                       -- tu marca
     url           = 'nexoscripts.net',           -- link que se muestra
-    tagline       = '¡Descubre más scripts!',
+    tagline       = '▶ YouTube: @nexostorenet',
     showInUI      = true,                             -- footer en el menú
     consoleBanner = true,                             -- banner en la consola al iniciar
 }
