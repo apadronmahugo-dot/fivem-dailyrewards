@@ -5,7 +5,9 @@
 **Recompensas diarias con rachas para tu servidor de FiveM.**
 Compatible con **ESX · QBCore · QBox · Standalone**. Sin SQL. 100% gratis.
 
-![Preview](docs/1-disponible.png)
+![Trailer](docs/trailer.gif)
+
+🎬 [Ver tráiler en MP4](docs/trailer.mp4)
 
 ### ▶ Hecho por **[TU CANAL](https://youtube.com/@tucanal)**: ¡suscríbete para más scripts gratis!
 
