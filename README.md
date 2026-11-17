@@ -7,6 +7,8 @@ Compatible con **ESX · QBCore · QBox · Standalone**. Sin SQL. 100% gratis.
 
 ![Trailer](docs/trailer.gif)
 
+[![Descargar](https://img.shields.io/badge/⬇_DESCARGAR-v1.0.0-3DDC84?style=for-the-badge&labelColor=1a1c24)](https://github.com/apadronmahugo-dot/fivem-dailyrewards/releases/download/v1.0.0/fivem-dailyrewards-v1.0.0.zip)
+
 🎬 [Ver tráiler en MP4](docs/trailer.mp4)
 
 ### Hecho por **[Nexo Scripts](https://nexoscripts.net/en)**
@@ -44,7 +46,7 @@ Compatible con **ESX · QBCore · QBox · Standalone**. Sin SQL. 100% gratis.
 
 ## 📦 Instalación
 
-1. Descarga el repositorio (**Code → Download ZIP**) o desde [Releases](../../releases).
+1. Descarga **[fivem-dailyrewards-v1.0.0.zip](https://github.com/apadronmahugo-dot/fivem-dailyrewards/releases/download/v1.0.0/fivem-dailyrewards-v1.0.0.zip)** (o la última versión en [Releases](../../releases/latest)).
 2. Pon la carpeta `dailyrewards` en tu carpeta `resources`.
 3. Añade en tu `server.cfg` **después** de tu framework e inventario:
    ```cfg
