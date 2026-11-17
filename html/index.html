@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Rewards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="hidden">
+        <div class="panel">
+            <header>
+                <div class="title-wrap">
+                    <div class="logo">🎁</div>
+                    <div>
+                        <h1 id="t-title">Recompensas Diarias</h1>
+                        <p id="t-subtitle">Entra cada día y no rompas la racha</p>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-icon">🔥</span>
+                        <div>
+                            <small id="t-streak">Racha</small>
+                            <strong id="streak">0</strong>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-icon">⭐</span>
+                        <div>
+                            <small id="t-total">Total reclamadas</small>
+                            <strong id="total">0</strong>
+                        </div>
+                    </div>
+                    <button class="close" id="close" title="Cerrar">✕</button>
+                </div>
+            </header>
+
+            <div class="progress"><div class="progress-bar" id="progress"></div></div>
+
+            <section class="grid" id="grid"></section>
+
+            <div class="actions">
+                <button id="claim" class="claim-btn">Reclamar</button>
+                <div id="countdown" class="countdown hidden">
+                    <span id="t-comeback">Vuelve en</span>
+                    <strong id="timer">00:00:00</strong>
+                </div>
+            </div>
+
+            <footer id="branding" class="hidden">
+                <span class="yt">▶</span>
+                <span>by <b id="b-name">TU CANAL</b></span>
+                <span class="sep">•</span>
+                <span id="b-url">youtube.com/@tucanal</span>
+                <span class="sep">•</span>
+                <span id="b-tag" class="tag">¡Suscríbete!</span>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
