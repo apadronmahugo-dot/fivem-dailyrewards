@@ -9,7 +9,7 @@ Compatible con **ESX · QBCore · QBox · Standalone**. Sin SQL. 100% gratis.
 
 🎬 [Ver tráiler en MP4](docs/trailer.mp4)
 
-### ▶ Hecho por **[TU CANAL](https://youtube.com/@tucanal)**: ¡suscríbete para más scripts gratis!
+### ▶ Hecho por **[Nexo Scripts](https://nexoscripts.net/en)** · ¡descubre más scripts en nuestra web!
 
 </div>
 
@@ -110,6 +110,6 @@ Si lo compartes, mantén los créditos 🙏
 
 <div align="center">
 
-### ⭐ Si te sirve, deja una estrella y suscríbete a **[TU CANAL](https://youtube.com/@tucanal)** ⭐
+### ⭐ Si te sirve, deja una estrella y visita **[Nexo Scripts](https://nexoscripts.net/en)** ⭐
 
 </div>

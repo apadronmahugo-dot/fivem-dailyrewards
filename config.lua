@@ -25,9 +25,9 @@ Config.AdminResetCommand = 'dr_reset'
 --  BRANDING (aquí va tu canal 👇)
 -- ============================================================
 Config.Branding = {
-    name          = 'TU CANAL',                       -- nombre del canal
-    url           = 'youtube.com/@tucanal',           -- link que se muestra
-    tagline       = '¡Suscríbete para más scripts gratis!',
+    name          = 'Nexo Scripts',                       -- tu marca
+    url           = 'nexoscripts.net',           -- link que se muestra
+    tagline       = '¡Descubre más scripts!',
     showInUI      = true,                             -- footer en el menú
     consoleBanner = true,                             -- banner en la consola al iniciar
 }

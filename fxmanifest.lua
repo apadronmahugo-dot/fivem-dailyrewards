@@ -4,7 +4,7 @@ lua54 'yes'
 
 name 'dailyrewards'
 description 'Daily Rewards con rachas - ESX / QBCore / QBox / Standalone'
-author 'TU CANAL'
+author 'Nexo Scripts'
 version '1.0.0'
 
 shared_scripts {
