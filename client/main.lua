@@ -9,25 +9,25 @@ end
 
 RegisterCommand(Config.Command, function()
     if isOpen then return end
-    TriggerServerEvent('dailyrewards:open')
+    TriggerServerEvent('nexo_recompensas:open')
 end, false)
 
 if Config.Keybind then
     RegisterKeyMapping(Config.Command, L('keybind_desc'), 'keyboard', Config.Keybind)
 end
 
-RegisterNetEvent('dailyrewards:show', function(payload)
+RegisterNetEvent('nexo_recompensas:show', function(payload)
     isOpen = true
     SetNuiFocus(true, true)
     SendNUIMessage({ action = 'open', payload = payload })
 end)
 
-RegisterNetEvent('dailyrewards:update', function(state)
+RegisterNetEvent('nexo_recompensas:update', function(state)
     SendNUIMessage({ action = 'update', state = state })
 end)
 
 RegisterNUICallback('claim', function(_, cb)
-    TriggerServerEvent('dailyrewards:claim')
+    TriggerServerEvent('nexo_recompensas:claim')
     cb('ok')
 end)
 
@@ -46,7 +46,7 @@ local function checkOnJoin()
     if not Config.NotifyOnJoin or checkedJoin then return end
     checkedJoin = true
     SetTimeout(8000, function()
-        TriggerServerEvent('dailyrewards:checkPending')
+        TriggerServerEvent('nexo_recompensas:checkPending')
     end)
 end
 

@@ -63,11 +63,11 @@ Config.Rewards = {
 -- ============================================================
 Config.Standalone = {
     AddMoney = function(source, account, amount)
-        print(('[dailyrewards] Standalone: dar $%s (%s) a %s -> configura Config.Standalone.AddMoney'):format(amount, account, source))
+        print(('[nexo_recompensas] Standalone: dar $%s (%s) a %s -> configura Config.Standalone.AddMoney'):format(amount, account, source))
         return true
     end,
     AddItem = function(source, item, amount)
-        print(('[dailyrewards] Standalone: dar %sx %s a %s -> configura Config.Standalone.AddItem'):format(amount, item, source))
+        print(('[nexo_recompensas] Standalone: dar %sx %s a %s -> configura Config.Standalone.AddItem'):format(amount, item, source))
         return true
     end,
 }

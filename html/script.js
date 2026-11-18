@@ -1,4 +1,4 @@
-const RES = typeof GetParentResourceName === 'function' ? GetParentResourceName() : 'dailyrewards';
+const RES = typeof GetParentResourceName === 'function' ? GetParentResourceName() : 'nexo_recompensas';
 const $ = (id) => document.getElementById(id);
 
 let data = null;

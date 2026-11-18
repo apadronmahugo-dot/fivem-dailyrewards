@@ -7,7 +7,7 @@ Compatible con **ESX · QBCore · QBox · Standalone**. Sin SQL. 100% gratis.
 
 ![Trailer](docs/trailer.gif)
 
-[![Descargar](https://img.shields.io/badge/⬇_DESCARGAR-v1.0.0-3DDC84?style=for-the-badge&labelColor=1a1c24)](https://github.com/apadronmahugo-dot/fivem-dailyrewards/releases/download/v1.0.0/fivem-dailyrewards-v1.0.0.zip)
+[![Descargar](https://img.shields.io/badge/⬇_DESCARGAR-GRATIS-3DDC84?style=for-the-badge&labelColor=1a1c24)](https://github.com/apadronmahugo-dot/fivem-dailyrewards/releases/latest/download/nexo_recompensas.zip)
 
 🎬 [Ver tráiler en MP4](docs/trailer.mp4)
 
@@ -46,11 +46,12 @@ Compatible con **ESX · QBCore · QBox · Standalone**. Sin SQL. 100% gratis.
 
 ## 📦 Instalación
 
-1. Descarga **[fivem-dailyrewards-v1.0.0.zip](https://github.com/apadronmahugo-dot/fivem-dailyrewards/releases/download/v1.0.0/fivem-dailyrewards-v1.0.0.zip)** (o la última versión en [Releases](../../releases/latest)).
-2. Pon la carpeta `dailyrewards` en tu carpeta `resources`.
+1. Descarga **[nexo_recompensas.zip](https://github.com/apadronmahugo-dot/fivem-dailyrewards/releases/latest/download/nexo_recompensas.zip)** (siempre la última versión).
+2. Pon la carpeta `nexo_recompensas` en tu carpeta `resources`.
+   ⚠️ No le cambies el nombre a la carpeta.
 3. Añade en tu `server.cfg` **después** de tu framework e inventario:
    ```cfg
-   ensure dailyrewards
+   ensure nexo_recompensas
    ```
 4. (Opcional) Permiso para el comando de admin:
    ```cfg
@@ -100,10 +101,10 @@ Si no usas framework, conecta tu sistema en `Config.Standalone.AddMoney` y `Conf
 
 ```lua
 -- Export (servidor): racha actual del jugador
-local racha = exports.dailyrewards:GetStreak(source)
+local racha = exports.nexo_recompensas:GetStreak(source)
 
 -- Evento (servidor): cuando alguien reclama
-AddEventHandler('dailyrewards:claimed', function(src, day, streak)
+AddEventHandler('nexo_recompensas:claimed', function(src, day, streak)
     print(('%s reclamó el día %s (racha %s)'):format(GetPlayerName(src), day, streak))
 end)
 ```

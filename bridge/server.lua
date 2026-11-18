@@ -49,9 +49,9 @@ function Bridge.AddMoney(src, account, amount)
     if not p then return false end
 
     if Bridge.name == 'esx' then
-        p.addAccountMoney(account == 'cash' and 'money' or account, amount, 'dailyrewards')
+        p.addAccountMoney(account == 'cash' and 'money' or account, amount, 'nexo_recompensas')
     else
-        p.Functions.AddMoney(account, amount, 'dailyrewards')
+        p.Functions.AddMoney(account, amount, 'nexo_recompensas')
     end
     return true
 end

@@ -2,10 +2,10 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 
-name 'dailyrewards'
+name 'nexo_recompensas'
 description 'Daily Rewards con rachas - ESX / QBCore / QBox / Standalone'
 author 'Nexo Scripts'
-version '1.0.0'
+version '1.0.1'
 
 shared_scripts {
     'config.lua',

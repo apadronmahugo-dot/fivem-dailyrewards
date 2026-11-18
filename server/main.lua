@@ -93,16 +93,16 @@ end
 
 -- ===================== callbacks =====================
 
-RegisterNetEvent('dailyrewards:open', function()
+RegisterNetEvent('nexo_recompensas:open', function()
     local src = source
     local state = getState(src)
     if not state then
-        return TriggerClientEvent('dailyrewards:notify', src, L('not_loaded'), 'error')
+        return TriggerClientEvent('nexo_recompensas:notify', src, L('not_loaded'), 'error')
     end
 
     UI_REWARDS = UI_REWARDS or buildUiRewards()
 
-    TriggerClientEvent('dailyrewards:show', src, {
+    TriggerClientEvent('nexo_recompensas:show', src, {
         state = state,
         rewards = UI_REWARDS,
         imagePath = Bridge.imagePath,
@@ -111,7 +111,7 @@ RegisterNetEvent('dailyrewards:open', function()
     })
 end)
 
-RegisterNetEvent('dailyrewards:claim', function()
+RegisterNetEvent('nexo_recompensas:claim', function()
     local src = source
     if busy[src] then return end
     busy[src] = true
@@ -119,7 +119,7 @@ RegisterNetEvent('dailyrewards:claim', function()
     local id = Bridge.GetIdentifier(src)
     if not id then
         busy[src] = nil
-        return TriggerClientEvent('dailyrewards:notify', src, L('not_loaded'), 'error')
+        return TriggerClientEvent('nexo_recompensas:notify', src, L('not_loaded'), 'error')
     end
 
     local data = load(id)
@@ -127,7 +127,7 @@ RegisterNetEvent('dailyrewards:claim', function()
 
     if data.last == t then
         busy[src] = nil
-        return TriggerClientEvent('dailyrewards:notify', src, L('already'), 'error')
+        return TriggerClientEvent('nexo_recompensas:notify', src, L('already'), 'error')
     end
 
     local streak = effectiveStreak(data, t) + 1
@@ -149,18 +149,18 @@ RegisterNetEvent('dailyrewards:claim', function()
         end
     end
 
-    TriggerEvent('dailyrewards:claimed', src, dayIndex, streak) -- hook para otros scripts
-    TriggerClientEvent('dailyrewards:notify', src, L('notify_claimed', dayIndex), 'success')
-    TriggerClientEvent('dailyrewards:update', src, getState(src))
+    TriggerEvent('nexo_recompensas:claimed', src, dayIndex, streak) -- hook para otros scripts
+    TriggerClientEvent('nexo_recompensas:notify', src, L('notify_claimed', dayIndex), 'success')
+    TriggerClientEvent('nexo_recompensas:update', src, getState(src))
 
     busy[src] = nil
 end)
 
-RegisterNetEvent('dailyrewards:checkPending', function()
+RegisterNetEvent('nexo_recompensas:checkPending', function()
     local src = source
     local state = getState(src)
     if state and not state.claimedToday then
-        TriggerClientEvent('dailyrewards:notify', src, L('notify_ready', Config.Command), 'inform')
+        TriggerClientEvent('nexo_recompensas:notify', src, L('notify_ready', Config.Command), 'inform')
     end
 end)
 
@@ -178,7 +178,7 @@ RegisterCommand(Config.AdminResetCommand, function(src, args)
     DeleteResourceKvp('dr:' .. id)
 
     local msg = L('reset_done', target)
-    if src == 0 then print(msg) else TriggerClientEvent('dailyrewards:notify', src, msg, 'success') end
+    if src == 0 then print(msg) else TriggerClientEvent('nexo_recompensas:notify', src, msg, 'success') end
 end, true)
 
 -- ===================== exports =====================
@@ -194,7 +194,7 @@ CreateThread(function()
     Wait(1500)
     if not Config.Branding.consoleBanner then return end
     print('^5==================================================^7')
-    print(('^5  dailyrewards ^7v%s  |  framework: ^2%s^7'):format(GetResourceMetadata(GetCurrentResourceName(), 'version', 0), Bridge.name))
+    print(('^5  nexo_recompensas ^7v%s  |  framework: ^2%s^7'):format(GetResourceMetadata(GetCurrentResourceName(), 'version', 0), Bridge.name))
     print(('^3  by %s^7  ->  ^4%s^7'):format(Config.Branding.name, Config.Branding.url))
     print(('^7  %s'):format(Config.Branding.tagline))
     print('^5==================================================^7')

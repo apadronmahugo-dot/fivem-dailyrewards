@@ -23,6 +23,6 @@ function ClientBridge.Notify(msg, kind)
     EndTextCommandThefeedPostTicker(false, true)
 end
 
-RegisterNetEvent('dailyrewards:notify', function(msg, kind)
+RegisterNetEvent('nexo_recompensas:notify', function(msg, kind)
     ClientBridge.Notify(msg, kind)
 end)
